@@ -24,6 +24,8 @@ public class ThreadDemo3 {
 
 	public static final Object obj1 = new Object();
 	public static final Object obj2 = new Object();
+	
+	//ËÀËø½ø³Ì
 	static class MyThread implements Runnable{
 		public boolean flag;
 		public boolean isFlag() {
