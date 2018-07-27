@@ -7,7 +7,7 @@ package com.thread;
  * @author pycrab
  *
  */
-public class ThreadDemo {
+public class ThreadDemo1 {
 
 	static class MyThread extends Thread{
 		//需要重写run方法
