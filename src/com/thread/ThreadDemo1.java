@@ -82,6 +82,7 @@ public class ThreadDemo1 {
 				
 				//7.暂停当前执行的线程对像，让出当次CPU的执行时间
 				Thread.yield();
+				
 				try {
 					//8.等待该线程执行完毕
 					tr1.join();
