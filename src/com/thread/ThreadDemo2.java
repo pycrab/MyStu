@@ -25,7 +25,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * 	获得监视器就会获得锁，线程才能执行，没有监视器不能执行
  * 	同步代码块其实就是使用了参数的监视器锁
  * 
- * 
  * @author pycrab
  *
  */
