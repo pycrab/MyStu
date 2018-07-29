@@ -20,7 +20,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 	2.同步的行为占用时间不要太长，避免阻塞
  * 	3.持有锁时不要调用其它对象的同步方法
  * 
- * 监视器monitor：
+ * 监视器monitor
  * 	锁和条件并不是面向对象的，解决方案是内置于每一个Object变量中的monitor监视器对象，
  * 	获得监视器就会获得锁，线程才能执行，没有监视器不能执行
  * 	同步代码块其实就是使用了参数的监视器锁
