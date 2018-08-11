@@ -186,7 +186,7 @@ public class BubbleSort {
 	}
 	
 	private void print() {
-		cnt ++;
+		cnt++;
 		String string = "";
 		for (int a : arr) {
 			string += a;
