@@ -11,6 +11,8 @@ public class BubbleSort {
 	static int cnt = 0;
 	// 比较次数标记，用于打印时显式体现version3的效果
 	static int compare = 0;
+	// 交换次数，用于打印时显式体现version3的效果
+	static int exchange = 0;
 	
 	public BubbleSort() {
 		arr = new int[10];
@@ -45,7 +47,7 @@ public class BubbleSort {
 					int temp = arr[j];
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
-					
+					exchange++;
 				}
 			}
 			print();
@@ -69,7 +71,7 @@ public class BubbleSort {
 					int temp = arr[j];
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
-					
+					exchange++;
 					sorted = false;
 
 				}
@@ -106,7 +108,7 @@ public class BubbleSort {
 //					if (compare != 1) {
 //						sorted = false;
 //					}
-					
+					exchange++;
 					lastExchangeIndex = j;
 					sorted = false;
 
@@ -147,7 +149,7 @@ public class BubbleSort {
 					int temp = arr[j];
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
-					
+					exchange++;
 					rightLastExchangeIndex = j;
 					sorted = false;
 
@@ -169,7 +171,7 @@ public class BubbleSort {
 					int temp = arr[j];
 					arr[j] = arr[j-1];
 					arr[j-1] = temp;
-					
+					exchange++;
 					leftLastExchangeIndex = j;
 					sorted = false;
 
@@ -192,8 +194,9 @@ public class BubbleSort {
 			string += a;
 			string += " ";
 		}
-		System.out.println(string + "第" + cnt + "次排序结束-共进行" + compare + "次比较");
+		System.out.println(string + "第" + cnt + "次排序结束-共进行" + compare + "次比较-共" + exchange + "次交换");
 		compare = 0;
+		exchange = 0;
 
 	}
 	public static void main(String[] args) {
