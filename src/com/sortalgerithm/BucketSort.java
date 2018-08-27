@@ -14,8 +14,10 @@ public class BucketSort {
 		}
 	}
 	
+	/**
+	 * 简单的桶排序
+	 */
 	public void bucketSort() {
-		
 		// 创建桶
 		int[] buckets = new int[11];
 		for (int i = 0; i < arr.length; i++) {
