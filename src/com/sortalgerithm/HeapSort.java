@@ -8,10 +8,24 @@ public class HeapSort {
 	private int[] arr;
 	
 	public HeapSort() {
-		arr = new int[10];
-		for(int i = 0; i< 10; ++i) {
-			arr[i] = (int) (Math.random()*10);
-		}
+		arr = new int[14];
+//		for(int i = 0; i< 10; ++i) {
+//			arr[i] = (int) (Math.random()*10);
+//		}
+		arr[0] = 51;
+		arr[1] = 32;
+		arr[2] = 73;
+		arr[3] = 23;
+		arr[4] = 42;
+		arr[5] = 62;
+		arr[6] = 99;
+		arr[7] = 14;
+		arr[8] = 24;
+		arr[9] = 3943;
+		arr[10] = 58;
+		arr[11] = 65;
+		arr[12] = 80;
+		arr[13] = 120;
 	}
 	
 	/**
@@ -27,6 +41,10 @@ public class HeapSort {
 		
 		// 2.交换堆顶的数和数组末尾的数,继续从上往下调整剩余的堆
 		for(int tail = arr.length-1; tail > 0; --tail) {
+			for(int i = 0;i < arr.length; ++i) {
+				System.out.print(arr[i] + " ");
+			}
+			System.out.println();
 			swap(0, tail);
 			adjustHeap(0, tail-1);
 		}
